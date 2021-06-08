@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/kkenon/Desktop/kennedy/nwspp/News-App/venv"
+$VIRTUAL_ENV = r"/home/kkenon/Desktop/kennedy/nwspp/News-App/virtual"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

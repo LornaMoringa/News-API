@@ -1,4 +1,4 @@
-#!/home/kkenon/Desktop/kennedy/nwspp/News-App/venv/bin/python
+#!/home/kkenon/Desktop/kennedy/nwspp/News-App/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
