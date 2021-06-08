@@ -1,12 +1,9 @@
 # News App
 
 ## Author
-
 Kirui Lorna
-
 ## Description
 This news application enables users to get all news sources, articles and time published the news was published.
-
 
 ## live link to application
 
@@ -27,9 +24,6 @@ This news application enables users to get all news sources, articles and time p
 
 7.Run  python3.8 views.py to launch the program.
 
-
-
-
 ### Technologies Used
 * Python
 * Pip
@@ -40,6 +34,5 @@ This news application enables users to get all news sources, articles and time p
 * git (for version control)
 
 ### License
-
 MIT License
 Copyright (c) 2021
