@@ -45,3 +45,18 @@ def processSources(sourceLists):
         sourcesResults.append(sourceObject)
 
     return sourcesResults
+
+def get_articles(category):
+    """
+    Function that gets the json Articles response to our url request
+    """
+    get_articles_url = base_article_url.format(category, apiKey)
+    get_articles_response = requests.get(get_articles_url).json()
+
+    articles_results = None
+
+    if get_articles_response['articles']:
+        articles_results_list = get_articles_response['articles']
+        articles_results = process_articles_results(articles_results_list)
+
+    return articles_results
