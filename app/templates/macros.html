@@ -2,11 +2,11 @@
     {%for source in source_list %}
     <div class="col-xs-12 col-sm-4 col-md-6 pt-3 mt-5">
         <div class="card">
-            <h5 class="card-header  bg-dark text-center text-white">{{source.name}}</h5>
+            <h5 class="card-header   text-center text-danger">{{source.name}}</h5>
             <div class="card-body">
               <p class="card-text">{{source.description|truncate(50)}}</p>
             </div>
-                <a href="{{source.url}}" class="btn btn-success" target="_blank">Visit {{source.name}}</a>
+                <a href="{{source.url}}" class="btn btn-sm btn-primary" target="_blank">Visit {{source.name}}</a>
           </div>
     </div>
         {% endfor %}
@@ -23,7 +23,7 @@
               <p class="card-text">{{article.description|truncate(50)}}</p>
               <p>Date published:{{article.publishedAt}}</p>
             </div>
-                <a href="{{article.url}}" class="btn btn-success" target="_blank">View Article</a>
+                <a href="{{article.url}}" class="btn btn-primary" target="_blank">View Article</a>
           </div>
     </div>
         {% endfor %}
