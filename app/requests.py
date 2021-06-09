@@ -60,3 +60,26 @@ def get_articles(category):
         articles_results = process_articles_results(articles_results_list)
 
     return articles_results
+
+def process_articles_results(articles_list):
+    """
+    Function  that processes the articles result and transform them to a list of Objects
+
+    """
+    
+    articles_results = []
+    for article_item in articles_list:
+        id = article_item.get('id')
+        title = article_item.get('name')
+        author = article_item.get('author')
+        description = article_item.get('description')
+        url = article_item.get('url')
+        urlToImage = article_item.get('urlToImage')
+        publishedAt = article_item.get('publishedAt')
+        content = article_item.get('content')
+
+        if urlToImage and author:
+            article_object = Article(id, title, author, description, url, urlToImage, publishedAt, content)
+            articles_results.append(article_object)
+
+    return articles_results
