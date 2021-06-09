@@ -29,3 +29,19 @@ def getSources():
 
     return sourcesResults        
 
+def processSources(sourceLists):
+    sourcesResults = []
+    for sourceList in sourceLists:
+        id = sourceList.get('id')
+        name = sourceList.get('name')
+        description = sourceList.get('description')
+        url = sourceList.get('url')
+        category = sourceList.get('category')
+        language = sourceList.get('language')
+        country = sourceList.get('country')
+
+        sourceObject = Source(id,name,description,url,language,category,country)
+
+        sourcesResults.append(sourceObject)
+
+    return sourcesResults
